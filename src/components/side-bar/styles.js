@@ -9,7 +9,6 @@ export const Styles = styled.div`
 
   .sidebar {
     position: fixed;
-    right: 0;
     top: 70px;
     width: 50px;
     height: 100vh;
@@ -17,12 +16,13 @@ export const Styles = styled.div`
   }
 
   .sidebar1 {
-    right: 0;
+
     width: 220px;
     height: 100vh;
     background: green;
     position: fixed;
     top: 70px;
+  
     
   }
   .main {
@@ -30,11 +30,14 @@ export const Styles = styled.div`
     color: aliceblue;
     font-weight: bolder;
    
+   
+   
   }
   .icon {
     color: aliceblue;
     font-size: 30px;
-    margin-right: 10px;
+    margin-right: 0px;
+    padding-right: 0px;
   }
   ul {
     list-style: none;
@@ -42,13 +45,12 @@ export const Styles = styled.div`
     width: 100%;
     li {
       text-align: center;
-      margin-top: 16px;
+      margin-top: 10px;
       font-size: 22px;
       display: flex;
-      justify-content: end;
+      justify-content: start;
       gap: 10px;
-
-      padding: 15px 0;
+      padding: 10px 5px ;
       width: 100%;
 
       a {

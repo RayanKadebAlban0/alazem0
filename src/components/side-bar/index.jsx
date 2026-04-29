@@ -10,25 +10,28 @@ import MenuIcon from '@mui/icons-material/Menu';
 const SideBar = () => {
     const [show, setshow] = useState(false)
 
+
     return (
         <Styles>
 
-            <div  className={show ? "sidebar1" : "sidebar"} >
+            <div className={show ? "sidebar"  : "sidebar1"} >
                 <div className="main" onClick={() => setshow(!show)}>
-            <MenuIcon/>
+                    <MenuIcon />
+
+                    <ul>
+                        <li>
+                            <div className='icon'><HomeIcon sx={{ fontSize: 40 }} /></div>
+                            {!show && <Link to="/">الصفحة الرئيسية</Link>}
+
+                        </li>
+                        <li>
+                            <d className='icon'><DashboardIcon /></d>
+                            {!show && <Link to="/dashboard">لوحة التحكم</Link>}
+
+
+                        </li>
+                    </ul>
                 </div>
-                <ul>
-                    <li>
-                       
-                        {show && <Link to="/">Home</Link>}
-                         <div className='icon'><HomeIcon sx={{ fontSize: 40 }} /></div>
-                    </li>
-                    <li>
-                          {show && <Link to="/dashboard">Dashboard</Link>}
-                        <d className='icon'><DashboardIcon/></d>
-                     
-                    </li>
-                </ul>
             </div>
         </Styles>
     )

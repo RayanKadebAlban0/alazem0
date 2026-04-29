@@ -1,14 +1,20 @@
 import React from "react";
-import SideBar from "../components/side-bar/index.jsx";
- const Home = React.lazy(() => import("../pages/home/index.jsx"));
+import LandinPage from "../pages/landing-page/index.jsx"
+const Home = React.lazy(() => import("../pages/home/index.jsx"));
+const Dashboard = React.lazy(() => import("../pages/dashboard/index.jsx"));
 
 export const routs = [
-    {
-        path: "/",
-        element:<Home/>,
-    },
-    {
-        path: "SideBar /",
-        element: <SideBar/>,
-    }
-]
+
+  {
+    path: "/",
+    element: <LandinPage />,
+  },
+  {
+    path: "/Home",
+    element: <Home />,
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
+  },
+];
