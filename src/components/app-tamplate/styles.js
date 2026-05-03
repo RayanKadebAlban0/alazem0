@@ -1,21 +1,20 @@
 import styled from "styled-components";
 
 export const Styles = styled.div`
-  .main-data {
-    min-height: calc(100dvh - 100px);
-   margin-top:85px ;
-   margin-right: 230px;
-  
-  }
-  .main-data1{
-    margin-right: 3px;
-  }
-  .layout-wrapper {
-    display: "flex";
+  .layout-container {
+    display: flex;
+    flex-direction: row-reverse; /* ليدعم التصميم العربي RTL */
     min-height: 100vh;
+    width: 100%;
     position: relative;
+    padding-top: 85px; /* مسافة للـ Navbar العلوي */
   }
-  .main-content {
+
+  
+  .content-wrapper {
     flex: 1;
+    padding: 25px;
+    background-color: #f8f9fa;
   }
+
 `;

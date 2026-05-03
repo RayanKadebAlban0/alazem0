@@ -1,15 +1,15 @@
 import React from 'react'
 import { Formik, Field, Form } from 'formik';
-import Home from "../../pages/home/index"
 import { Link } from 'react-router-dom'
+import { Styles } from './styles';
 const LogIn = () => {
   return (
-    <div className='login'>
-      <h1> أهلا بكم!</h1>
-      <div className='log'>
+    <Styles>
+      <div className='login'>
 
+        <div className='form'>
+          <h1> أهلا بكم!</h1>
 
-        <div>
           <h1>Sign Up</h1>
           <Formik
             initialValues={{
@@ -17,55 +17,47 @@ const LogIn = () => {
               lastName: '',
               email: '',
             }}
-            // onSubmit={async (values) => {
-            //   await new Promise((r) => setTimeout(r, 500));
-            //   alert(JSON.stringify(values, null, 2));
-            // }}
+          // onSubmit={async (values) => {
+          //   await new Promise((r) => setTimeout(r, 500));
+          //   alert(JSON.stringify(values, null, 2));
+          // }}
           >
-            <Form className='form'>
-              {/* <div>
-                <label htmlFor="firstName">First Name</label>
-                <Field id="firstName" name="firstName" placeholder="Jane" />
-              </div> */}
+            <Form >
 
-              {/* <div>
-                <label htmlFor="lastName">Last Name</label>
-                <Field id="lastName" name="lastName" placeholder="Doe" />
-              </div> */}
+              <div className='email'>
+                <div><label htmlFor="email" >   البريدالالكتروني   </label></div>
 
-              <div>
-                <label htmlFor="email">البريدالالكتروني</label>
-
-                <Field
+                <div><Field
                   id="email"
                   name="email"
                   placeholder="jane@acme.com"
                   type="email"
-                />
+                /></div>
               </div>
 
-              <div>
-                <label htmlFor="password">كلمة المرور</label>
+              <div className='pass'>
+                <div><label htmlFor="password">كلمة المرور</label></div>
+                <div>
+                  <Field
+                    id="password"
+                    name="password"
+                    placeholder="********"
+                    type="password"
+                  />
+                </div></div>
 
-                <Field
-                  id="password"
-                  name="password"
-                  placeholder="********"
-                  type="password"
-                />
-              </div>
-
-              <div>
-                <button type="submit" className='btn' >
-                  <Link to ="/Home"> Submit </Link>
+              <div className='btn'>
+                <button type="submit" >
+                  <Link to="/Home"> Submit </Link>
                 </button>
               </div>
+
             </Form>
           </Formik>
         </div>
 
       </div>
-    </div>
+    </Styles>
   )
 }
 

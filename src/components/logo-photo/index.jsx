@@ -5,7 +5,10 @@ import { Styles } from "./styles";
 const LogoPhoto = () => {
   return (
     <Styles>
-      <img src={Alazem} alt="Logo" className="logo-photo" />
+   
+
+        <img src={Alazem} alt="Logo" className="logo-photo"/>
+     
     </Styles>
   )
 }

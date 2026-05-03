@@ -1,38 +1,40 @@
-import React, { useState } from 'react'
 import { Styles } from './styles'
-import { Link } from 'react-router-dom'
-
+import { NavLink } from 'react-router-dom'
+// import NavItem from "../side-bar/item";
 import HomeIcon from '@mui/icons-material/Home';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import MenuIcon from '@mui/icons-material/Menu';
 
 
-const SideBar = () => {
-    const [show, setshow] = useState(false)
+const NavItem = ({ to, title, icon, expanded }) => (
+    <NavLink
+        to={to}
+        className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'}
+    >
+        <div className="icon-wrapper">{icon}</div>
+        {expanded && <span className="label">{title}</span>}
+    </NavLink>
+);
 
+
+const SideBar = ({ expanded, onToggle }) => {
 
     return (
-        <Styles>
+        <Styles expanded={expanded}>
 
-            <div className={show ? "sidebar"  : "sidebar1"} >
-                <div className="main" onClick={() => setshow(!show)}>
+            <div  >
+                <div className="main" onClick={onToggle}>
                     <MenuIcon />
-
-                    <ul>
-                        <li>
-                            <div className='icon'><HomeIcon sx={{ fontSize: 40 }} /></div>
-                            {!show && <Link to="/">الصفحة الرئيسية</Link>}
-
-                        </li>
-                        <li>
-                            <d className='icon'><DashboardIcon /></d>
-                            {!show && <Link to="/dashboard">لوحة التحكم</Link>}
-
-
-                        </li>
-                    </ul>
                 </div>
+                <nav>
+                    <NavItem to="/Home" title="الصفحة الرئيسية" icon={<HomeIcon sx={{ fontSize: 30 }} />} expanded={expanded} />
+                    <NavItem to="/dashboard" title="لوحة التحكم" icon={<DashboardIcon sx={{ fontSize: 30 }} />} expanded={expanded} />
+                </nav>
             </div>
+
+
+
+
         </Styles>
     )
 }

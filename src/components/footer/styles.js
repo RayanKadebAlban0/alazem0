@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Styles = styled.div`
-  background-color: green;
+  background-color: rgb(39,100,172);
   color: white;
   text-align: center;
   padding-block: 10px;

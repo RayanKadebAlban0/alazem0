@@ -1,11 +1,16 @@
 import styled from "styled-components";
 
 export const Styles = styled.div`
-.logo-photo{
-    width:auto;
-    height: 50px;
-    border-radius: 5%;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-
+  .logo-photo {
+    background-color: #f8fafc;
+    width: clamp(68px, 3.5vw, 160px);
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 10px;
+  }
 `;

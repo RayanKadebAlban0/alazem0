@@ -9,7 +9,7 @@ const NavbarComponent = () => {
     <Styles>
       <nav className="nav">
         <div className="brand-section">
-          <LogoPhoto />
+          <div className="LogoPhoto"><LogoPhoto /></div>
           <span className="logo">ALAZEM</span>
         </div>
 

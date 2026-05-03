@@ -1,62 +1,6 @@
 import styled from "styled-components";
 
 export const Styles = styled.div`
-  /* .nav {
-    background-color: green;
-    color: aliceblue;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    z-index: 1000;
-    padding: 0 20px;
-  }
-
-  .brand-section {
-    display: flex;
-    align-items: center;
-  }
-  .logo-photo {
-    margin-left: 30px;
-    margin-top: 1%;
-  }
-  .logo {
-    margin-left: 10px;
-    text-decoration: none;
-    color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    line-height: normal;
-    text-transform: uppercase;
-  }
-  .subbar {
-    display: flex;
-    gap: 20px;
-    margin-right: 300px;
-    left: 0;
-  }
-  .item {
-    margin-right: 20px;
-    font-size: 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-  }
-
-  .navbar-nav a {
-    color: aliceblue !important;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  .navbar-nav :hover a {
-    color: red !important;
-    font-weight: bold;
-  } */
 
 
    .nav {
@@ -64,9 +8,8 @@ export const Styles = styled.div`
   top: 0;
   left: 0;
   right: 0px;
-  height: 78px;
-  
-  background: green;
+  height: 80px;
+  background: rgb(39,100,172);
 
   display: flex;
   justify-content: space-between;
@@ -74,33 +17,37 @@ export const Styles = styled.div`
 
   padding: 0 30px;
   z-index: 1000;
+  direction: rtl;
 }
 
 .brand-section {
   display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: space-around;
+  gap: 30px;
 }
-
+/* .LogoPhoto{
+    border: 2px solid red;
+} */
 .logo {
-  font-size: 24px;
+  /* font-size: 24px; */
   font-weight: bold;
   color: white;
+    font-size: clamp(18px, 2vw, 28px);
 }
 
 .nav-actions {
   display: flex;
   align-items: center;
   gap: 20px;
-   margin-right: 220px;
+   margin-right: 0;
 
 }
 
 .search-box {
   display: flex;
   align-items: center;
-  gap: 10px;
-
+  /* gap: 10px; */
   background: white;
   padding: 8px 14px;
   border-radius: 10px;
@@ -109,16 +56,18 @@ export const Styles = styled.div`
 .search-box input {
   border: none;
   outline: none;
+  background: transparent;
 }
 
 .icon-btn {
   cursor: pointer;
+
 }
 
 .user-section {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   color: white;
  
 }

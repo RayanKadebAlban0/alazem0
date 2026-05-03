@@ -1,6 +1,6 @@
 import React from "react";
-import LandinPage from "../pages/landing-page/index.jsx"
 const Home = React.lazy(() => import("../pages/home/index.jsx"));
+const LandinPage = React.lazy(() => import("../pages/landing-page/index.jsx"));
 const Dashboard = React.lazy(() => import("../pages/dashboard/index.jsx"));
 
 export const routs = [
@@ -17,4 +17,9 @@ export const routs = [
     path: "/dashboard",
     element: <Dashboard />,
   },
+
+  //   {
+  //   path: "/LogoPhoto",
+  //   element: < LandinPage/>,
+  // },
 ];

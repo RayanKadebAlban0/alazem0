@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const Styles = styled.div`
-.body{
-}
+
+font-size: x-large;
+color: red;
+
 
 
 
