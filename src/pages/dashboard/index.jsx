@@ -1,11 +1,14 @@
 import React from 'react'
-
+import { Styled } from './styles'
+import AppTamplate from '../../components/app-tamplate/index'
+import Form from '../../components/form-com'
 const Dashboard = () => {
   return (
-    
-      <h2>Dashboard</h2>
-
-
+    <Styled>
+      <AppTamplate isHaveFooter={false} pageTitle={"DashBoard"}>
+        <Form/>
+      </AppTamplate>
+    </Styled>
   )
 }
 

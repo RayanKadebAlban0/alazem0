@@ -1,11 +1,12 @@
 import React from 'react'
 import HomeComponent from '../../components/home-com/index'
+import AppTamplate from '../../components/app-tamplate/index'
 
 const Home = () => {
   return (
-      <div>
+    <AppTamplate pageTitle={"Home"}>
         <HomeComponent />
-      </div>
+      </AppTamplate>
   
   )
 };

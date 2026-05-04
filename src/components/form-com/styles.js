@@ -1,8 +1,14 @@
 import styled from "styled-components";
 
-export const Styles = styled.div`
-.body{
-}
+export const  Styles =styled.div`
+
+
+
+
+
+
+
+
 
 
 
