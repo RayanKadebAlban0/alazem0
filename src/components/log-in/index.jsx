@@ -8,9 +8,9 @@ const LogIn = () => {
       <div className='login'>
 
         <div className='form'>
-          <h1> أهلا بكم!</h1>
+          <h1> مؤسسة العزم</h1>
 
-          <h1>Sign Up</h1>
+          <h3>مرحباً بعودتك!</h3>
           <Formik
             initialValues={{
               firstName: '',
@@ -25,7 +25,7 @@ const LogIn = () => {
             <Form >
 
               <div className='email'>
-                <div><label htmlFor="email" >   البريدالالكتروني   </label></div>
+                <div><label htmlFor="email" >   اسم المستخدم   </label></div>
 
                 <div><Field
                   id="email"
@@ -45,12 +45,13 @@ const LogIn = () => {
                     type="password"
                   />
                 </div></div>
-
               <div className='btn'>
                 <button type="submit" >
-                  <Link to="/Home"> Submit </Link>
+                  <Link to="/Home"> تسجيل الدخول </Link>
                 </button>
               </div>
+                            <div className='forget'>نسيت كلمة المرور؟</div>
+
 
             </Form>
           </Formik>

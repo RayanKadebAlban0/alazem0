@@ -11,7 +11,7 @@ export const Styles = styled.div`
     align-items: stretch;
     margin: 0;
     padding: 0;
-    background-color: red; /* للتأكد من اللون */
+    /* background-color: red; للتأكد من اللون */
   }
 
 

@@ -56,7 +56,12 @@ export const Styles = styled.div`
       }
     }
   }
-
+.forget{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
   .btn button {
     width: 100%;
     padding: 15px;

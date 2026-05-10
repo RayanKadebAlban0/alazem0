@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 // import SideBar from "../side-bar";
 
 function AppTemplate({ children, isHaveFooter,pageTitle }) {
-  const projectName = "BootCapm Task";
+  const projectName = "مؤسسة العزم";
 
 
   return (

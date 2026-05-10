@@ -5,21 +5,7 @@ import { Styles } from './styles'
 const HomeComponent = () => {
   return (
     <Styles>
-      <br/>ffffffffffff<br/>
-      <br/>ffffffffffff<br/>
-      <br/>ffffffffffff<br/>
-      <br/>ffffffffffff<br/>
-      <br/>ffffffffffff<br/>
-      <br/>ffffffffffff<br/>
-      <br/>ffffffffffff<br/>
-      <br/>ffffffffffff<br/>
-      <br/>ffffffffffff<br/>
-      <br/>ffffffffffff<br/>
-      <br/>ffffffffffff<br/>
-      <br/>ffffffffffff<br/>
-      <br/>ffffffffffff<br/>
-      <br/>ffffffffffff<br/>
-      <br/>ffffffffffff<br/>
+  <h3>الصفحة الرئيسية</h3>
       </Styles>
   )
 }

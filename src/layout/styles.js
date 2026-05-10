@@ -20,7 +20,7 @@ export const Styles = styled.div`
     flex-direction: column;
   flex: 1;
   overflow-y: auto;
-  background-color: #ebeef1;
+background-color: rgb(255, 255, 255);
   min-height: 100vh;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   /* margin-right: ${(props) => (props.isExpanded ? "250px" : "80px")} */

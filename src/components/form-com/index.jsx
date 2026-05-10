@@ -14,7 +14,7 @@ const Form = () => {
                 }, 1000);
             }}
         >
-    return (
+
             {props => (
                 <form onSubmit={props.handleSubmit}>
                     <input

@@ -14,7 +14,7 @@ export const Styles = styled.div`
   .content-wrapper {
     flex: 1;
     padding: 25px;
-    background-color: #f8f9fa;
+    background-color: #faf8f8;
   }
 
 `;
