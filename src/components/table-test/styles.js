@@ -1,15 +1,12 @@
 import styled from "styled-components";
 
 export const Styles = styled.div`
-padding: 30px;
+
 
 .photo { 
 
     }
 
-.table {
- /* background-color: white; */
-  }
 
   /* هذا الكود يضمن اختفاء أي خطوط افتراضية قد تفرضها المكتبة */
   .rdt_TableRow {

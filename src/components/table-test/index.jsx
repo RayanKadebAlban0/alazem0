@@ -145,6 +145,7 @@ const customStyles = {
       border: '1px solid #0a0a0a', // هذا هو الإطار الخارجي للجدول
       borderRadius: '12px',       // لجعل زوايا الإطار دائرية مثل الصورة
       overflow: 'hidden',
+      
     },
   },
   header: {
@@ -189,7 +190,8 @@ const customStyles = {
   },
   cells: {
     style: {
-      
+      whiteSpace: 'nowrap',
+      minWidth: '200px',
       justifyContent: 'right', // محاذاة محتوى الخلايا لليمين
     },
   },

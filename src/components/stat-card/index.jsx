@@ -6,15 +6,18 @@ import { Styles } from './styles.js';
 
 // 1. المكون الأب
 const StatCard = ({ children }) => (
-  <div className="stat-card">{children}</div>
+  <Styles>
+    <div className="stat-card">{children}</div>
+    </Styles>
 );
 
-// 2. العنوان
+// 2. title
 const CardTitle = ({ children }) => (
+  
   <h3 className="card-title">{children}</h3>
 );
 
-// 3. القيمة
+//content
 const CardValue = ({ value, unit, className = "" }) => (
   <div className={`card-value-container ${className}`}>
     <span className="card-value">{value}</span>
@@ -22,7 +25,7 @@ const CardValue = ({ value, unit, className = "" }) => (
   </div>
 );
 
-// 4. التوجه
+// 4. footer
 const CardTrend = ({ value, type }) => {
   const isIncrease = type === 'increase';
   const statusClass = isIncrease ? 'trend-increase' : 'trend-decrease';
@@ -30,14 +33,15 @@ const CardTrend = ({ value, type }) => {
 
     return (
         <Styles>
-            <div>
+            <div className='cards'>
     <div className={`card-trend ${statusClass}`}>
       <span>{value}</span>
       <Icon size={16} />
                 </div>
                 </div>
             </Styles>
-  );
+    );
+    
 };
 
 // ربط المكونات الفرعية بالأب

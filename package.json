@@ -25,6 +25,7 @@
     "react": "18.2.0",
     "react-aria-components": "^1.17.0",
     "react-bootstrap": "^2.10.10",
+    "react-calendar": "^6.0.1",
     "react-data-table-component": "^7.7.1",
     "react-dom": "18.2.0",
     "react-helmet": "^6.1.0",

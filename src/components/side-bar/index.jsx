@@ -1,9 +1,17 @@
 import { Styles } from './styles'
 import { NavLink } from 'react-router-dom'
 // import NavItem from "../side-bar/item";
-import HomeIcon from '@mui/icons-material/Home';
-import DashboardIcon from '@mui/icons-material/Dashboard';
+// import HomeIcon from '@mui/icons-material/Home';
+// import GroupIcon from '@mui/icons-material/Group';
+// import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
+// import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+// import OutlinedFlagIcon from '@mui/icons-material/OutlinedFlag';
+// import EqualizerIcon from '@mui/icons-material/Equalizer';
+// import AssignmentIcon from '@mui/icons-material/Assignment';
+
+// import DashboardIcon from '@mui/icons-material/Dashboard';
 import MenuIcon from '@mui/icons-material/Menu';
+import { routs } from '../../router';
 
 
 const NavItem = ({ to, title, icon, expanded }) => (
@@ -27,8 +35,17 @@ const SideBar = ({ expanded, onToggle }) => {
                     <MenuIcon />
                 </div>
                 <nav>
-                    <NavItem to="/Home" title="الصفحة الرئيسية" icon={<HomeIcon sx={{ fontSize: 30 }} />} expanded={expanded} />
-                    <NavItem to="/dashboard" title="لوحة التحكم" icon={<DashboardIcon sx={{ fontSize: 30 }} />} expanded={expanded} />
+                    {routs.filter(route => !route.hideInSidebar)
+                        .map((route) => (
+                            <NavItem
+                                key={route.path}
+                                to={route.path}
+                                title={route.title}
+                                icon={route.icon}
+                                expanded={expanded}
+                            />
+                        ))}
+
                 </nav>
             </div>
 

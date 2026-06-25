@@ -2,7 +2,12 @@ import React from 'react'
 import { Formik, Field, Form } from 'formik';
 import { Link } from 'react-router-dom'
 import { Styles } from './styles';
+
 const LogIn = () => {
+  const handleSubmit = (values) => {
+    // Handle form submission, e.g., send data to the server
+    console.log(values);
+  }
   return (
     <Styles>
       <div className='login'>
@@ -17,10 +22,7 @@ const LogIn = () => {
               lastName: '',
               email: '',
             }}
-          // onSubmit={async (values) => {
-          //   await new Promise((r) => setTimeout(r, 500));
-          //   alert(JSON.stringify(values, null, 2));
-          // }}
+            onSubmit={handleSubmit}
           >
             <Form >
 
